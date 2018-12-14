@@ -17,7 +17,7 @@ namespace OdeToFood
         }
         public string GetMessageOfTheDay()
         {
-            return _configuration["Greeter"];
+            return _configuration["Greeting"];
         }
     }
 }
