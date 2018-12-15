@@ -1,9 +1,11 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
+﻿@model OdeToFood.Models.Restaurant
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
 </head>
 <body>
-    <h1>Hello!</h1>
-    <div>This is the index view </div>
+    <h1>@this.Model.Name</h1>
+    <div>The Id value is @Model.Id </div>
 </body>
 </html>

@@ -18,7 +18,7 @@ namespace OdeToFood.Controllers
 
             //return new ObjectResult(model);
 
-            return View();
+            return View(model);
             
         }
     }
