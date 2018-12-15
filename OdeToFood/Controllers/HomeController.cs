@@ -40,6 +40,10 @@ namespace OdeToFood.Controllers
         {
             //return Content(id.ToString());
             var model = _restaurantData.Get(id);
+            if(model == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
             return View(model);
         }
     }
