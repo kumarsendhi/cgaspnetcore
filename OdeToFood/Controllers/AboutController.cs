@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OdeToFood.Controllers
 {
-    [Route("about")]
+    [Route("[controller]/[action]")]
     public class AboutController
     {
         [Route("")]
@@ -15,7 +15,7 @@ namespace OdeToFood.Controllers
             return "00189898989";
         }
 
-        [Route("address")]
+        
         public string address()
         {
             return "USA";

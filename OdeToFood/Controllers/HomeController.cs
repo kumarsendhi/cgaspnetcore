@@ -1,15 +1,18 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace OdeToFood.Controllers
 {
-    public class HomeController
+    public class HomeController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "Hello from the HomeController!";
+            //return this.BadRequest();
+            return Content("Hello from the HomeController!");
+            
         }
     }
 }
