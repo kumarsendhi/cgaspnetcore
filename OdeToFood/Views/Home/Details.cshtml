@@ -1,16 +1,23 @@
 ﻿@model OdeToFood.Models.Restaurant
+@{
+    ViewBag.Title = "Details";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
-    <h1>@Model.Name</h1>
+@*<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+    </head>
+    <body>*@
+<h1>@Model.Name</h1>
 
-    <div>Id: @Model.Id</div>
-    <div>Cuisine: @Model.Cuisine</div>
-    <a asp-action="Index" asp-controller="Home">Home</a>
-</body>
-</html>
+<div>Id: @Model.Id</div>
+<div>Cuisine: @Model.Cuisine</div>
+<a asp-action="Index" asp-controller="Home">Home</a>
+@*</body>
+    </html>*@
 
 
+@*@section footer{
+    <h1>@Model.CurrentMessage</h1>
+}*@
