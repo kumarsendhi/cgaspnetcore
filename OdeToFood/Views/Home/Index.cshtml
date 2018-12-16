@@ -21,6 +21,12 @@
     </head>
     <body>*@
 
+@foreach(var restaurant in Model.Restaurants)
+{
+    @Html.Partial("_summary", restaurant);
+
+}
+
 <table>
     @foreach (var restaurant in Model.Restaurants)
     {
